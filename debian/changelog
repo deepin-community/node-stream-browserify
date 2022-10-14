@@ -1,0 +1,53 @@
+node-stream-browserify (2.0.2-3) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+  * Indicate that this version breaks node-libs-browser < 2.2.1-3
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 11 Jan 2020 09:37:21 +0100
+
+node-stream-browserify (2.0.2-2) experimental; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add patch to fix node-readable-stream paths
+  * Require node-readable-stream ≥ 3.4.0
+  * Remove useless dependency versions
+  * Switch test and install to pkg-js-tools
+  * Remove dpkg-dev from build dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Dec 2019 20:53:35 +0100
+
+node-stream-browserify (2.0.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.0.2
+  * Disable patches as it were no longer applicable
+  * Update d/copyright
+  * Update d/control
+  * Add d/upstream/metadata
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Thu, 24 Jan 2019 03:32:01 +0530
+
+node-stream-browserify (2.0.1-3) unstable; urgency=medium
+
+  * Fix debci due to buffer() warning
+  * Bump compat and policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 07 Jan 2019 01:34:00 +0100
+
+node-stream-browserify (2.0.1-2) unstable; urgency=medium
+
+  * Source upload
+  * Bump compat and policy (no changes)
+  * Move to salsa
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 07 Jun 2018 15:45:11 +0200
+
+node-stream-browserify (2.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #861809)
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 12 Jun 2017 14:59:00 +0200

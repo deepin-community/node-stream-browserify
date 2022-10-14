@@ -1,0 +1,39 @@
+Source: node-stream-browserify
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Bastien Roucariès <rouca@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 12),
+ nodejs (>= 6),
+ node-inherits <!nocheck>,
+ node-readable-stream (>= 3.4.0) <!nocheck>,
+ node-tape <!nocheck>,
+ node-tap (>= 10) <!nocheck>,
+ pkg-js-tools (>= 0.9.12~)
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-stream-browserify
+Vcs-Git: https://salsa.debian.org/js-team/node-stream-browserify.git
+Homepage: https://github.com/substack/stream-browserify
+Rules-Requires-Root: no
+
+Package: node-stream-browserify
+Architecture: all
+Depends:
+ ${misc:Depends},
+ nodejs (>= 4.7),
+ node-inherits,
+ node-readable-stream (>= 3.4.0)
+Breaks: node-libs-browser (<< 2.2.1-3)
+Description: stream module from Node.js for browsers
+ This module implements the stream abstraction used in Node.js
+ in browser context.
+ .
+ A stream is an abstract interface for working with streaming data in Node.js.
+ In Connection-oriented communication, a data stream is a sequence of
+ digitally encoded coherent signals (packets of data or data packets)
+ used to transmit or receive information that is in the process of
+ being transmitted.
+ .
+ Node.js is an event-based server-side JavaScript engine.

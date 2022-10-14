@@ -1,0 +1,24 @@
+Description: fix readable-stream paths
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: https://github.com/browserify/stream-browserify/issues/17
+Last-Update: 2019-12-02
+
+--- a/index.js
++++ b/index.js
+@@ -25,11 +25,11 @@
+ var inherits = require('inherits');
+ 
+ inherits(Stream, EE);
+-Stream.Readable = require('readable-stream/readable.js');
+-Stream.Writable = require('readable-stream/writable.js');
+-Stream.Duplex = require('readable-stream/duplex.js');
+-Stream.Transform = require('readable-stream/transform.js');
+-Stream.PassThrough = require('readable-stream/passthrough.js');
++Stream.Readable = require('readable-stream/lib/_stream_readable.js');
++Stream.Writable = require('readable-stream/lib/_stream_writable.js');
++Stream.Duplex = require('readable-stream/lib/_stream_duplex.js');
++Stream.Transform = require('readable-stream/lib/_stream_transform.js');
++Stream.PassThrough = require('readable-stream/lib/_stream_passthrough.js');
+ 
+ // Backwards-compat with node 0.4.x
+ Stream.Stream = Stream;
